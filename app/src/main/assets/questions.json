@@ -1,86 +1,398 @@
 [
-  {
-    "question": "What has to be broken before you can use it?",
-    "options": ["Glass", "Egg", "Promise", "Stick"],
-    "answer": 1,
-    "explanation": "An egg has to be broken before you can cook or eat it."
-  },
-  {
-    "question": "I'm tall when I'm young, and I'm short when I'm old. What am I?",
-    "options": ["Building", "Tree", "Candle", "Person"],
-    "answer": 2,
-    "explanation": "A candle is tall when new, and melts to become short."
-  },
-  {
-    "question": "What month of the year has 28 days?",
-    "options": ["February", "January", "All of them", "None"],
-    "answer": 2,
-    "explanation": "Every month of the year has at least 28 days."
-  },
-  {
-    "question": "What is full of holes but still holds water?",
-    "options": ["Sponge", "Bucket", "Net", "Cloud"],
-    "answer": 0,
-    "explanation": "A sponge has many holes but can absorb water."
-  },
-  {
-    "question": "What has hands but can't clap?",
-    "options": ["A statue", "A clock", "A person", "A dog"],
-    "answer": 1,
-    "explanation": "A clock has hands that point to the time, but they cannot clap."
-  },
-  {
-    "question": "What gets wetter the more it dries?",
-    "options": ["A towel", "A sponge", "A shirt", "A soap"],
-    "answer": 0,
-    "explanation": "A towel absorbs water to dry things, so it gets wetter as it dries."
-  },
-  {
-    "question": "What has many keys but can't open a single lock?",
-    "options": ["A prison", "A piano", "A car", "A map"],
-    "answer": 1,
-    "explanation": "A piano has many musical keys but cannot open locks."
-  },
-  {
-    "question": "What has one eye but can't see?",
-    "options": ["A storm", "A needle", "A potato", "A pirate"],
-    "answer": 1,
-    "explanation": "A needle has an eye (the hole for the thread) but it cannot see."
-  },
-  {
-    "question": "What goes up but never comes down?",
-    "options": ["A balloon", "The sun", "Your age", "Rain"],
-    "answer": 2,
-    "explanation": "Your age always increases and never decreases."
-  },
-  {
-    "question": "What can you catch but not throw?",
-    "options": ["A ball", "A cold", "A fish", "A butterfly"],
-    "answer": 1,
-    "explanation": "You can catch a cold (get sick), but you cannot throw it."
-  },
-  {
-    "question": "I have branches, but no fruit, trunk or leaves. What am I?",
-    "options": ["A bank", "A tree", "A river", "A mountain"],
-    "answer": 0,
-    "explanation": "A bank has branches, but it is a financial institution, not a tree."
-  },
-  {
-    "question": "What has words, but never speaks?",
-    "options": ["A parrot", "A person", "A book", "A radio"],
-    "answer": 2,
-    "explanation": "A book is full of words, but it cannot talk."
-  },
-  {
-    "question": "What has a head and a tail that will never meet?",
-    "options": ["A snake", "A coin", "A dog", "A train"],
-    "answer": 1,
-    "explanation": "A coin has a head side and a tail side, but they are on opposite sides."
-  },
-  {
-    "question": "What question can you never answer yes to?",
-    "options": ["Are you asleep?", "Are you hungry?", "Do you like pizza?", "Are you here?"],
-    "answer": 0,
-    "explanation": "If you are asleep, you cannot answer the question."
-  }
+{
+"question": "A farmer has 17 sheep. All but 9 run away. How many sheep remain?",
+"options": ["8", "9", "17", "26"],
+"answer": 1,
+"explanation": "All but 9 means that 9 sheep remain."
+},
+{
+"question": "You overtake the runner in second place during a race. What position are you in now?",
+"options": ["First", "Second", "Third", "Fourth"],
+"answer": 1,
+"explanation": "You take the second runner's position, so you are second."
+},
+{
+"question": "A train travels east while the wind blows west. Which way does the smoke travel if the train is electric?",
+"options": ["East", "West", "Straight up", "There is no smoke"],
+"answer": 3,
+"explanation": "An electric train does not produce exhaust smoke."
+},
+{
+"question": "How many months have 28 days?",
+"options": ["1", "2", "6", "12"],
+"answer": 3,
+"explanation": "Every month has at least 28 days."
+},
+{
+"question": "A doctor gives you three pills and tells you to take one every 30 minutes. How long will the pills last?",
+"options": ["30 minutes", "60 minutes", "90 minutes", "120 minutes"],
+"answer": 1,
+"explanation": "Take the first pill immediately, the second after 30 minutes, and the third after 60 minutes."
+},
+{
+"question": "What becomes wetter the more it dries?",
+"options": ["A sponge", "A towel", "A cloud", "A bottle"],
+"answer": 1,
+"explanation": "A towel absorbs water while drying something else."
+},
+{
+"question": "A man shaves several times a day but still has a beard. How is this possible?",
+"options": ["He uses a mirror", "He is a barber", "He shaves only at night", "He has no razor"],
+"answer": 1,
+"explanation": "He shaves other people's beards as a barber."
+},
+{
+"question": "What can travel around the world while staying in one corner?",
+"options": ["A satellite", "A stamp", "A compass", "A shadow"],
+"answer": 1,
+"explanation": "A postage stamp can remain in the corner of a letter as it travels."
+},
+{
+"question": "You have one match and enter a dark room containing a candle, an oil lamp, and a fireplace. What do you light first?",
+"options": ["The candle", "The oil lamp", "The fireplace", "The match"],
+"answer": 3,
+"explanation": "You must light the match before lighting anything else."
+},
+{
+"question": "What has cities but no houses, forests but no trees, and rivers but no water?",
+"options": ["A dream", "A map", "A painting", "A globe"],
+"answer": 1,
+"explanation": "A map represents these features without containing the real things."
+},
+{
+"question": "A plane crashes on the border between France and Germany. Where are the survivors buried?",
+"options": ["France", "Germany", "Both countries", "Nowhere"],
+"answer": 3,
+"explanation": "Survivors are alive, so they are not buried."
+},
+{
+"question": "What has a neck but no head?",
+"options": ["A giraffe", "A bottle", "A person", "A statue"],
+"answer": 1,
+"explanation": "A bottle has a neck but no head."
+},
+{
+"question": "If five machines make five toys in five minutes, how long do 100 identical machines take to make 100 toys?",
+"options": ["1 minute", "5 minutes", "20 minutes", "100 minutes"],
+"answer": 1,
+"explanation": "Each machine makes one toy in five minutes, so 100 machines make 100 toys in five minutes."
+},
+{
+"question": "What is always in front of you but cannot be seen?",
+"options": ["Your nose", "Your future", "Your shadow", "The air"],
+"answer": 1,
+"explanation": "The future lies ahead of you but cannot be seen directly."
+},
+{
+"question": "A room has four corners. A cat sits in each corner, and each cat sees three cats. How many cats are there?",
+"options": ["4", "8", "12", "16"],
+"answer": 0,
+"explanation": "There are four cats, one in each corner, and each can see the other three."
+},
+{
+"question": "What has many keys but cannot open a single lock?",
+"options": ["A locksmith's bag", "A piano", "A keyring", "A treasure chest"],
+"answer": 1,
+"explanation": "A piano has musical keys rather than keys for locks."
+},
+{
+"question": "Before Mount Everest was discovered, what was the highest mountain in the world?",
+"options": ["K2", "Mont Blanc", "Mount Everest", "Kilimanjaro"],
+"answer": 2,
+"explanation": "Mount Everest was still the highest mountain even before people discovered it."
+},
+{
+"question": "What has one eye but cannot see?",
+"options": ["A storm", "A needle", "A potato", "A camera"],
+"answer": 1,
+"explanation": "A needle has an eye through which thread passes."
+},
+{
+"question": "A father and son have a car accident. The father dies, and the son is taken to hospital. The surgeon says, 'I cannot operate; he is my son.' How is this possible?",
+"options": ["The surgeon is his mother", "The surgeon is his uncle", "The father survived", "The surgeon is his brother"],
+"answer": 0,
+"explanation": "The surgeon is the boy's mother. The riddle challenges assumptions about who can be a surgeon."
+},
+{
+"question": "What can you hold in your right hand but never in your left hand?",
+"options": ["Your left elbow", "Your right elbow", "A coin", "A pen"],
+"answer": 0,
+"explanation": "You can reach across and hold your left elbow with your right hand, but not your right elbow with your left hand in the same way."
+},
+{
+"question": "A clock takes five seconds to strike six times. How long does it take to strike twelve times, assuming equal intervals between strikes?",
+"options": ["10 seconds", "11 seconds", "12 seconds", "15 seconds"],
+"answer": 1,
+"explanation": "Six strikes create five intervals. Twelve strikes create eleven intervals, each one second long."
+},
+{
+"question": "What has four fingers and a thumb but is not alive?",
+"options": ["A glove", "A hand", "A puppet", "A statue"],
+"answer": 0,
+"explanation": "A glove has four finger sections and a thumb section."
+},
+{
+"question": "If you throw a red stone into the Blue Sea, what does it become?",
+"options": ["Blue", "Red", "Wet", "Invisible"],
+"answer": 2,
+"explanation": "The stone becomes wet when it enters the water."
+},
+{
+"question": "What can be broken without being touched?",
+"options": ["A glass", "A promise", "A window", "A plate"],
+"answer": 1,
+"explanation": "A promise can be broken by failing to keep it."
+},
+{
+"question": "A man walks in the rain without an umbrella or hat, but not a single hair on his head gets wet. Why?",
+"options": ["The rain stops above him", "He is bald", "He is indoors", "He wears invisible protection"],
+"answer": 1,
+"explanation": "He has no hair to get wet."
+},
+{
+"question": "What goes up but never comes down?",
+"options": ["A balloon", "Smoke", "Your age", "A rocket"],
+"answer": 2,
+"explanation": "Your age increases as time passes."
+},
+{
+"question": "Which word becomes shorter when you add two letters to it?",
+"options": ["Small", "Short", "Tiny", "Brief"],
+"answer": 1,
+"explanation": "Adding 'er' to 'short' creates 'shorter'."
+},
+{
+"question": "What has a head and a tail but no body?",
+"options": ["A snake", "A coin", "A comet", "A worm"],
+"answer": 1,
+"explanation": "A coin has a heads side and a tails side."
+},
+{
+"question": "A man looks at a photograph and says, 'Brothers and sisters I have none, but that man's father is my father's son.' Who is in the photograph?",
+"options": ["His father", "His son", "His uncle", "Himself"],
+"answer": 1,
+"explanation": "Since he has no siblings, 'my father's son' means himself. The photographed man's father is therefore him, so the photograph shows his son."
+},
+{
+"question": "What has words but never speaks?",
+"options": ["A radio", "A book", "A singer", "A parrot"],
+"answer": 1,
+"explanation": "A book contains written words but does not speak by itself."
+},
+{
+"question": "You see a boat full of people. It has not sunk, but when you look again, you cannot see a single person on board. Why?",
+"options": ["They jumped into the sea", "Everyone disappeared", "All the people are married", "The boat is empty"],
+"answer": 2,
+"explanation": "There is not a single person because every person aboard is married."
+},
+{
+"question": "What has branches but no fruit, trunk, or leaves?",
+"options": ["A tree", "A river", "A bank", "A forest"],
+"answer": 2,
+"explanation": "A bank can have branches that provide financial services."
+},
+{
+"question": "A basket contains six apples. Six people each take one apple, yet one apple remains in the basket. How?",
+"options": ["One person takes two apples", "The last person takes the basket with the apple inside", "An apple is invisible", "There are seven apples"],
+"answer": 1,
+"explanation": "The last person takes the basket containing the final apple."
+},
+{
+"question": "What has a bed but never sleeps?",
+"options": ["A hotel", "A river", "A bedroom", "A dog"],
+"answer": 1,
+"explanation": "A river has a riverbed but does not sleep."
+},
+{
+"question": "If an electric train travels north at 100 km/h and the wind blows south, which direction does its exhaust travel?",
+"options": ["North", "South", "East", "There is no exhaust"],
+"answer": 3,
+"explanation": "An electric train does not produce exhaust from an onboard combustion engine."
+},
+{
+"question": "What begins with T, ends with T, and has T inside it?",
+"options": ["A tent", "A teapot", "A tablet", "A ticket"],
+"answer": 1,
+"explanation": "A teapot begins and ends with T and can contain tea."
+},
+{
+"question": "What has a ring but no finger?",
+"options": ["A telephone", "A glove", "A hand", "A bracelet"],
+"answer": 0,
+"explanation": "A telephone can ring without having fingers."
+},
+{
+"question": "If two is company and three is a crowd, what are four and five?",
+"options": ["Nine", "A crowd", "Forty-five", "A company"],
+"answer": 0,
+"explanation": "Four plus five equals nine."
+},
+{
+"question": "A man pushes his car to a hotel and immediately knows he is bankrupt. Why?",
+"options": ["His car broke down", "He is playing Monopoly", "The hotel charges too much", "He lost his wallet"],
+"answer": 1,
+"explanation": "He is playing Monopoly and has landed on a property that he cannot afford."
+},
+{
+"question": "What has 13 hearts but no other organs?",
+"options": ["A hospital", "A deck of cards", "A human body", "A garden"],
+"answer": 1,
+"explanation": "A standard deck contains 13 cards in the hearts suit."
+},
+{
+"question": "What can fill a room but takes up no space?",
+"options": ["Air", "Furniture", "Light", "Water"],
+"answer": 2,
+"explanation": "Light can illuminate a room without occupying it like a physical object."
+},
+{
+"question": "A man stands on one side of a river and his dog on the other. He calls the dog, which crosses without getting wet and without using a bridge or boat. How?",
+"options": ["The river is frozen", "The dog flies", "The dog walks around the river", "The man throws a rope"],
+"answer": 0,
+"explanation": "If the river is frozen, the dog can cross over the ice without getting wet."
+},
+{
+"question": "What has an end but no beginning, a home but no family, and a space but no room?",
+"options": ["A keyboard", "A road", "A computer", "A book"],
+"answer": 0,
+"explanation": "A keyboard has an End key, a Home key, and a Space bar."
+},
+{
+"question": "If you have three oranges and take away two, how many oranges do you have?",
+"options": ["1", "2", "3", "5"],
+"answer": 1,
+"explanation": "You have the two oranges you took."
+},
+{
+"question": "What has teeth but cannot bite?",
+"options": ["A crocodile", "A comb", "A shark", "A wolf"],
+"answer": 1,
+"explanation": "A comb has teeth used to arrange hair, not to bite."
+},
+{
+"question": "A man is found dead in a field with an unopened package beside him. There are no footprints nearby. What happened?",
+"options": ["He was struck by lightning", "His parachute failed to open", "He was attacked by an animal", "He fell from a tree"],
+"answer": 1,
+"explanation": "The package is his unopened parachute, and he fell from the sky."
+},
+{
+"question": "What has a face and two hands but no arms or legs?",
+"options": ["A statue", "A clock", "A portrait", "A doll"],
+"answer": 1,
+"explanation": "A clock has a face and hands that indicate the time."
+},
+{
+"question": "What can you catch but cannot throw?",
+"options": ["A ball", "A cold", "A frisbee", "A stone"],
+"answer": 1,
+"explanation": "You can catch a cold, but you cannot physically throw it."
+},
+{
+"question": "What comes once in a minute, twice in a moment, but never in a thousand years?",
+"options": ["The letter M", "The letter T", "The number 1", "A second"],
+"answer": 0,
+"explanation": "The letter M appears once in 'minute', twice in 'moment', and not in 'a thousand years'."
+},
+{
+"question": "Which weighs more: one kilogram of iron or one kilogram of feathers?",
+"options": ["Iron", "Feathers", "They weigh the same", "It depends on the temperature"],
+"answer": 2,
+"explanation": "Both have a mass of one kilogram."
+},
+{
+"question": "A man has 10 fish in a tank. Two drown, three swim away, and four die. How many fish remain in the tank?",
+"options": ["1", "3", "6", "10"],
+"answer": 3,
+"explanation": "Fish cannot swim out of a tank under the stated conditions, so all 10 remain in it."
+},
+{
+"question": "What has a thumb and four fingers but is not a hand?",
+"options": ["A glove", "A shoe", "A hat", "A watch"],
+"answer": 0,
+"explanation": "A glove is shaped to fit a thumb and four fingers."
+},
+{
+"question": "What gets bigger the more you take away from it?",
+"options": ["A bank account", "A hole", "A candle", "A shadow"],
+"answer": 1,
+"explanation": "Removing material from around a hole makes the hole larger."
+},
+{
+"question": "A man says, 'Everything I say is a lie.' Is he telling the truth?",
+"options": ["Yes, always", "No, always", "It creates a paradox", "Only on weekdays"],
+"answer": 2,
+"explanation": "If the statement is true, then it is false; if it is false, it may be true. This is a version of the liar paradox."
+},
+{
+"question": "What has no life but can die?",
+"options": ["A battery", "A stone", "A table", "A mountain"],
+"answer": 0,
+"explanation": "A battery is said to die when it runs out of usable energy."
+},
+{
+"question": "A man leaves home, turns left three times, and returns home to find two masked men waiting for him. Who are they?",
+"options": ["Burglars", "Police officers", "A catcher and an umpire", "His neighbours"],
+"answer": 2,
+"explanation": "He is a baseball player returning to home plate, where the catcher and umpire wear protective masks."
+},
+{
+"question": "What can run but never walks, has a mouth but never talks, and has a bed but never sleeps?",
+"options": ["A river", "A dog", "A machine", "A clock"],
+"answer": 0,
+"explanation": "A river runs, has a mouth, and flows along a riverbed."
+},
+{
+"question": "What has an eye but cannot cry, and can fly without wings?",
+"options": ["A needle", "A hurricane", "A potato", "A camera"],
+"answer": 1,
+"explanation": "A hurricane has an eye and can move across the sea without having wings."
+},
+{
+"question": "Which question can you never answer honestly with 'yes'?",
+"options": ["Are you hungry?", "Are you asleep?", "Are you listening?", "Are you ready?"],
+"answer": 1,
+"explanation": "If you are genuinely asleep, you cannot knowingly answer the question."
+},
+{
+"question": "What has many needles but does not sew?",
+"options": ["A pine tree", "A sewing kit", "A cactus only", "A tailor"],
+"answer": 0,
+"explanation": "A pine tree has many needle-shaped leaves."
+},
+{
+"question": "A bus driver goes the wrong way down a one-way street, passes a police officer, and is not stopped. Why?",
+"options": ["The officer is asleep", "The road is closed", "The driver is walking", "The bus is invisible"],
+"answer": 2,
+"explanation": "The riddle says 'bus driver' but does not say the person is driving the bus at that moment. They could be walking."
+},
+{
+"question": "What can be cracked, made, told, and played?",
+"options": ["A window", "A joke", "A code only", "A piano"],
+"answer": 1,
+"explanation": "You can crack a joke, make a joke, tell a joke, and play a joke on someone."
+},
+{
+"question": "What has a bottom at the top?",
+"options": ["A mountain", "Your legs", "A hat", "A bottle"],
+"answer": 2,
+"explanation": "A hat can have a bottom edge at the top of your head."
+},
+{
+"question": "If a rooster lays an egg on the roof of a house, which side will the egg roll down?",
+"options": ["Left", "Right", "The side with the steepest slope", "Neither"],
+"answer": 3,
+"explanation": "Roosters do not lay eggs."
+},
+{
+"question": "What has a spine but no bones?",
+"options": ["A fish", "A book", "A snake", "A dinosaur"],
+"answer": 1,
+"explanation": "A book has a spine where its pages are bound."
+},
+{
+"question": "If you spell 'sit' backward, what does it become?",
+"options": ["Tis", "Its", "Sit", "SIT"],
+"answer": 0,
+"explanation": "Reversing the letters in 'sit' gives 'tis'."
+}
 ]
