@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example"
+    namespace = "com.trickymind.brainpuzzle"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.trickymind"
+        applicationId = "com.trickymind.brainpuzzle"
         minSdk = 24
         targetSdk = 34
         versionCode = 1

@@ -13,17 +13,33 @@ jobs:
         with:
           java-version: '21'
           distribution: 'temurin'
-      - name: Decode Keystore
+      - name: Decode Keystore from Secret
         env:
           KEYSTORE_BASE64: ${{ secrets.KEYSTORE_BASE64 }}
         run: |
-          if [ -n "$KEYSTORE_BASE64" ]; then
-            echo "$KEYSTORE_BASE64" | base64 --decode > app/trickymind.keystore
-            echo "Keystore decoded from secret"
-          else
-            echo "Using local keystore if exists"
-            ls -lh app/trickymind.keystore || echo "No keystore"
-          fi
+          echo "$KEYSTORE_BASE64" | base64 --decode > app/trickymind.keystore
+          ls -lh app/trickymind.keystore
+      - name: Setup Signing
+        run: |
+          cat > app/signing.gradle.kts << 'GRAD'
+          android {
+              signingConfigs {
+                  create("release") {
+                      storeFile = file("trickymind.keystore")
+                      storePassword = System.getenv("KEYSTORE_PASSWORD") ?: "AbdoAbdo1997"
+                      keyAlias = System.getenv("KEY_ALIAS") ?: "trickymind"
+                      keyPassword = System.getenv("KEY_PASSWORD") ?: "AbdoAbdo1997"
+                  }
+              }
+              buildTypes {
+                  getByName("release") {
+                      signingConfig = signingConfigs.getByName("release")
+                      isMinifyEnabled = false
+                  }
+              }
+          }
+          GRAD
+          cat app/signing.gradle.kts
       - name: Build Release AAB
         env:
           KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
@@ -35,5 +51,5 @@ jobs:
       - name: Upload AAB Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: TrickyMind-Release-AAB-Signed
+          name: TrickyMind-US-Ready-AAB
           path: app/build/outputs/bundle/release/app-release.aab
