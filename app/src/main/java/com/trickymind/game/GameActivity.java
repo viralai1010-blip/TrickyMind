@@ -15,13 +15,14 @@ import java.lang.reflect.Type;
 import java.util.List;
 import java.util.Locale;
 
-public class GameActivity extends AppCompatActivity implements TextToSpeech.OnInitListener {
+public class GameActivity extends AppCompatActivity {
 
     TextView questionText, scoreText;
     Button option1, option2, option3, option4;
     ImageButton btnSpeak;
     
     TextToSpeech tts;
+    boolean isTtsReady = false;
     List<Question> questionList;
     int currentQuestionIndex = 0;
     int score = 0;
@@ -39,14 +40,27 @@ public class GameActivity extends AppCompatActivity implements TextToSpeech.OnIn
         option4 = findViewById(R.id.option4);
         btnSpeak = findViewById(R.id.btnSpeak);
 
-        // تهيئة النطق
-        tts = new TextToSpeech(this, this);
+        // حماية النطق باش ما يطيحش التطبيق إلا كان مشكل فالهاتف
+        try {
+            tts = new TextToSpeech(this, status -> {
+                if (status == TextToSpeech.SUCCESS) {
+                    tts.setLanguage(Locale.US);
+                    isTtsReady = true;
+                }
+            });
+        } catch (Exception e) {
+            isTtsReady = false;
+        }
 
-        // قراءة الأسئلة من JSON
         loadQuestionsFromJson();
 
-        // تشغيل الصوت ملي تكليكي على الأيقونة
-        btnSpeak.setOnClickListener(v -> speakQuestion());
+        btnSpeak.setOnClickListener(v -> {
+            if (isTtsReady && questionList != null && currentQuestionIndex < questionList.size()) {
+                tts.speak(questionList.get(currentQuestionIndex).question, TextToSpeech.QUEUE_FLUSH, null, null);
+            } else {
+                Toast.makeText(this, "Audio not available", Toast.LENGTH_SHORT).show();
+            }
+        });
 
         option1.setOnClickListener(v -> checkAnswer(0));
         option2.setOnClickListener(v -> checkAnswer(1));
@@ -71,20 +85,24 @@ public class GameActivity extends AppCompatActivity implements TextToSpeech.OnIn
     void loadQuestion() {
         if (questionList != null && currentQuestionIndex < questionList.size()) {
             Question q = questionList.get(currentQuestionIndex);
-            questionText.setText(q.question);
-            option1.setText(q.options[0]);
-            option2.setText(q.options[1]);
-            option3.setText(q.options[2]);
-            option4.setText(q.options[3]);
-            scoreText.setText("Score: " + score);
+            if (q != null) {
+                questionText.setText(q.question);
+                option1.setText(q.options[0]);
+                option2.setText(q.options[1]);
+                option3.setText(q.options[2]);
+                option4.setText(q.options[3]);
+                scoreText.setText("Score: " + score);
+            }
         } else {
-            Toast.makeText(this, "You finished all questions! Score: " + score, Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Game Over! Score: " + score, Toast.LENGTH_LONG).show();
             finish();
         }
     }
 
     void checkAnswer(int selectedIdx) {
+        if (questionList == null || currentQuestionIndex >= questionList.size()) return;
         Question q = questionList.get(currentQuestionIndex);
+        
         if (selectedIdx == q.answer) {
             score += 10;
             Toast.makeText(this, "Correct! +10 Points\n" + q.explanation, Toast.LENGTH_LONG).show();
@@ -93,21 +111,7 @@ public class GameActivity extends AppCompatActivity implements TextToSpeech.OnIn
         }
         
         currentQuestionIndex++;
-        new android.os.Handler().postDelayed(this::loadQuestion, 2500); // زيادة الوقت باش يقرا الشرح
-    }
-
-    private void speakQuestion() {
-        if (tts != null && questionList != null && currentQuestionIndex < questionList.size()) {
-            String textToSpeak = questionList.get(currentQuestionIndex).question;
-            tts.speak(textToSpeak, TextToSpeech.QUEUE_FLUSH, null, null);
-        }
-    }
-
-    @Override
-    public void onInit(int status) {
-        if (status == TextToSpeech.SUCCESS) {
-            tts.setLanguage(Locale.US); // نطق إنجليزي أمريكي
-        }
+        new android.os.Handler().postDelayed(this::loadQuestion, 2000);
     }
 
     @Override

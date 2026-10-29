@@ -44,7 +44,7 @@
             android:layout_height="48dp"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:src="@drawable/ic_volume_up"
-            app:tint="@color/purple_primary"/>
+            android:tint="@color/purple_primary"/>
     </LinearLayout>
 
     <com.google.android.material.button.MaterialButton
