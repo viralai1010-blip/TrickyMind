@@ -1,5 +1,6 @@
 package com.trickymind.game;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -7,7 +8,6 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,8 +17,10 @@ public class MainActivity extends AppCompatActivity {
         startButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // هذا مؤقتاً حتى نضيفو الأسئلة من بعد
-                Toast.makeText(MainActivity.this, "Game logic coming soon!", Toast.LENGTH_SHORT).show();
+                // هاد الرسالة باش نتأكدو أن هاد الكود هو اللي كيخدم
+                Toast.makeText(MainActivity.this, "Opening Game Screen...", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, GameActivity.class);
+                startActivity(intent);
             }
         });
     }
