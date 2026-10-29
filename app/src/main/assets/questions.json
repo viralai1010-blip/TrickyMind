@@ -22,5 +22,65 @@
     "options": ["Sponge", "Bucket", "Net", "Cloud"],
     "answer": 0,
     "explanation": "A sponge has many holes but can absorb water."
+  },
+  {
+    "question": "What has hands but can't clap?",
+    "options": ["A statue", "A clock", "A person", "A dog"],
+    "answer": 1,
+    "explanation": "A clock has hands that point to the time, but they cannot clap."
+  },
+  {
+    "question": "What gets wetter the more it dries?",
+    "options": ["A towel", "A sponge", "A shirt", "A soap"],
+    "answer": 0,
+    "explanation": "A towel absorbs water to dry things, so it gets wetter as it dries."
+  },
+  {
+    "question": "What has many keys but can't open a single lock?",
+    "options": ["A prison", "A piano", "A car", "A map"],
+    "answer": 1,
+    "explanation": "A piano has many musical keys but cannot open locks."
+  },
+  {
+    "question": "What has one eye but can't see?",
+    "options": ["A storm", "A needle", "A potato", "A pirate"],
+    "answer": 1,
+    "explanation": "A needle has an eye (the hole for the thread) but it cannot see."
+  },
+  {
+    "question": "What goes up but never comes down?",
+    "options": ["A balloon", "The sun", "Your age", "Rain"],
+    "answer": 2,
+    "explanation": "Your age always increases and never decreases."
+  },
+  {
+    "question": "What can you catch but not throw?",
+    "options": ["A ball", "A cold", "A fish", "A butterfly"],
+    "answer": 1,
+    "explanation": "You can catch a cold (get sick), but you cannot throw it."
+  },
+  {
+    "question": "I have branches, but no fruit, trunk or leaves. What am I?",
+    "options": ["A bank", "A tree", "A river", "A mountain"],
+    "answer": 0,
+    "explanation": "A bank has branches, but it is a financial institution, not a tree."
+  },
+  {
+    "question": "What has words, but never speaks?",
+    "options": ["A parrot", "A person", "A book", "A radio"],
+    "answer": 2,
+    "explanation": "A book is full of words, but it cannot talk."
+  },
+  {
+    "question": "What has a head and a tail that will never meet?",
+    "options": ["A snake", "A coin", "A dog", "A train"],
+    "answer": 1,
+    "explanation": "A coin has a head side and a tail side, but they are on opposite sides."
+  },
+  {
+    "question": "What question can you never answer yes to?",
+    "options": ["Are you asleep?", "Are you hungry?", "Do you like pizza?", "Are you here?"],
+    "answer": 0,
+    "explanation": "If you are asleep, you cannot answer the question."
   }
 ]
