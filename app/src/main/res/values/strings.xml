@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Tricky Mind</string>
+    <string name="start_game">Start Game</string>
+    <string name="welcome_msg">Ready to trick your brain?</string>
+</resources>
