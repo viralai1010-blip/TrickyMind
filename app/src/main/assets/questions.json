@@ -1,0 +1,26 @@
+[
+  {
+    "question": "What has to be broken before you can use it?",
+    "options": ["Glass", "Egg", "Promise", "Stick"],
+    "answer": 1,
+    "explanation": "An egg has to be broken before you can cook or eat it."
+  },
+  {
+    "question": "I'm tall when I'm young, and I'm short when I'm old. What am I?",
+    "options": ["Building", "Tree", "Candle", "Person"],
+    "answer": 2,
+    "explanation": "A candle is tall when new, and melts to become short."
+  },
+  {
+    "question": "What month of the year has 28 days?",
+    "options": ["February", "January", "All of them", "None"],
+    "answer": 2,
+    "explanation": "Every month of the year has at least 28 days."
+  },
+  {
+    "question": "What is full of holes but still holds water?",
+    "options": ["Sponge", "Bucket", "Net", "Cloud"],
+    "answer": 0,
+    "explanation": "A sponge has many holes but can absorb water."
+  }
+]

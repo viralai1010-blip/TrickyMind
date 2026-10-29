@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/dark_background"
+    android:padding="24dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score: 0"
+        android:textColor="@color/purple_primary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="end"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- السؤال مع زر النطق -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="32dp">
+
+        <TextView
+            android:id="@+id/questionText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Question goes here"
+            android:textColor="@color/text_white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <ImageButton
+            android:id="@+id/btnSpeak"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_volume_up"
+            app:tint="@color/purple_primary"/>
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/option1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="16dp"
+        android:text="Option 1"
+        android:textSize="16sp"
+        app:backgroundTint="@color/purple_variant"
+        app:cornerRadius="12dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/option2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="16dp"
+        android:text="Option 2"
+        android:textSize="16sp"
+        app:backgroundTint="@color/purple_variant"
+        app:cornerRadius="12dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/option3"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="16dp"
+        android:text="Option 3"
+        android:textSize="16sp"
+        app:backgroundTint="@color/purple_variant"
+        app:cornerRadius="12dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/option4"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="16dp"
+        android:text="Option 4"
+        android:textSize="16sp"
+        app:backgroundTint="@color/purple_variant"
+        app:cornerRadius="12dp"/>
+
+</LinearLayout>
