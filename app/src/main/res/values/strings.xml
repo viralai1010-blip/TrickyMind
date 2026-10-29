@@ -1,5 +1,3 @@
 <resources>
     <string name="app_name">Tricky Mind</string>
-    <string name="start_game">View Questions</string>
-    <string name="welcome_msg">Explore tricky riddles and answers</string>
 </resources>

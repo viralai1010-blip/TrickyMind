@@ -1,0 +1,6 @@
+{
+  "name": "Tricky Mind",
+  "description": "Engaging brain teasers, tricky riddles, and mind puzzles with voice narration, hints, and rewards.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
